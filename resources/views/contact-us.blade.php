@@ -10,7 +10,6 @@
                     <div class ="col-md-6 offset-md-3">
                         <div class ="card">
                             <div class ="card-header">
-                                Contact Us
                                 <div class ="card-body">
                                     @if(Session::has('message sent'))
                                         <div class ="alert alert-success" role="alert">
