@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,3 +23,6 @@ Route::get('/employee', [EmployeeController::class, 'index']);
 Route::post('/addimage', [EmployeeController::class, 'store'])->name('addimage');
 
 Route::get('/employeepage', [EmployeeController::class, 'display']);
+
+Route::get('/contact-us', [ContactController::class, 'contact']);
+Route::post('/send-message', [ContactController::class, 'sendEmail'])->name('contact.send');
